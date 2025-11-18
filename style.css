@@ -78,6 +78,10 @@ main hr {
   width: 400px;
 }
 
+.contact-hr {
+  width: 650px;
+}
+
 .intro-text {
   text-align: center;
   width: 56%;
