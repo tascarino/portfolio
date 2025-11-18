@@ -1,0 +1,263 @@
+html {
+  background-color: rgb(61, 64, 43);
+  color: #e6bfa0;
+  font-family: Modern Antiqua;
+}
+
+img {
+  border: 2px solid #3d402b;
+  border-radius: 5px;
+}
+
+.page-title{
+  text-align: center;
+  font-size: 36px;
+  text-decoration: underline;
+  text-decoration-color: #e4a771;
+  margin: 30px;
+}
+
+.introduction {
+  justify-content: center;
+  margin: 20px;
+  padding: 25px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(72, 72, 49);
+  border-radius: 5px;
+  box-shadow: 0 0 40px 0px rgba(29, 31, 19, 0.5);
+}
+
+.welcome {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.welcome-text {
+  vertical-align: middle;
+  text-align: left;
+  display: inline-block;
+  /*font-size: large;*/
+  font-size: 1.3vw;
+  width: 40%;
+  padding: 50px;
+  padding-right: 8px;
+}
+
+.intro-image {
+  vertical-align: middle;
+  display: inline-block;
+  width: 49%;
+}
+
+.fall-landscape{
+  width: 100%;
+  border: 2px solid #3d402b;
+  border-radius: 5px;
+  margin: auto;
+  display: inline-block;
+}
+
+hr {
+  border-color: #dcaa7e;
+  width: 90%;
+}
+
+main hr {
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-hr {
+  width: 600px;
+}
+
+.project-container hr {
+  width: 400px;
+}
+
+.intro-text {
+  text-align: center;
+  width: 56%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 25px;
+  background-color: rgb(72, 72, 49);
+}
+
+a {
+  text-decoration: none;
+  color: #e6bfa0;
+  text-transform: uppercase;
+  padding: 10px 10px 10px 10px;
+}
+
+@media only screen and (max-width: 700px){
+  nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+  }
+
+  nav ul li {
+    grid-column: 1 / -1;
+  }
+
+  .welcome {
+    display: grid;
+    place-items: center;
+  }
+
+  .intro-image{
+    width: 90%;
+    display: block;
+  } 
+
+  .fall-landscape{
+    display: block;
+  }
+
+  .welcome-text {
+    font-size: 2.5vw;
+    width: 80%;
+    text-align:center;
+    padding: 50px;
+    display: block;
+  }
+
+  .contact-information {
+    width: 70%;
+  }
+}
+
+nav{
+  box-shadow: 0px 2px 5px rgba(29, 31, 19, 1);
+  border-radius: 5px;
+  margin: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  background-color: rgb(72, 72, 49);
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a:hover, .active {
+  background-color: #cd925e;
+  color: rgb(46, 49, 31);
+  box-shadow: 0px 7px 5px rgba(29, 31, 19, 0.5);
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  margin: 20px;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 5px;
+  background-color: rgb(72, 72, 49);
+  box-shadow: 0px 2px 5px rgba(29, 31, 19, 1);
+  
+}
+
+.project img {
+  width: 500px;
+}
+
+.project h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #e4a771;
+}
+
+.project p{
+  line-height: 25px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 600px;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  gap: 10px;
+  place-items: center;
+}
+
+.container p{
+  padding: 20px;
+  line-height: 25px;
+  vertical-align: center;
+}
+
+.about-image {
+  grid-column: 2 / 3;
+  margin: 20px;
+  object-fit: contain;
+  height: auto;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(29, 31, 19, 1);
+}
+
+.about-content {
+  font-size: 1.35vw;
+  grid-column: 3 / 4;
+  background-color: rgb(72, 72, 49);
+  box-shadow: 0px 2px 5px rgba(29, 31, 19, 1);
+  border-radius: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section {
+  background-image: url("images/fall-landscape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #3d402b;
+  box-shadow: 0px 2px 5px rgba(29, 31, 19, 1);
+  border-radius: 5px;
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-information{
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgb(72, 72, 49);
+  border: 2px solid #3d402b;
+  box-shadow: 0px 2px 5px rgba(29, 31, 19, 1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-information ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+  line-height: 20px;
+}
+
+.contact-link {
+  color: #cd925e;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+.contact-link:hover {
+  font-weight: bold;
+}
